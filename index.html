@@ -1,0 +1,155 @@
+    <!DOCTYPE html>
+    <html lang="id">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b0710">
+    <title>2 Years With You ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+    <div class="hearts" aria-hidden="true"></div>
+
+    <audio id="bgMusic" loop preload="auto">
+    <source src="music/audio.mpeg" type="audio/mpeg">
+    </audio>
+
+    <button id="musicBtn" class="music-btn" aria-label="Putar musik">
+        ♪ <span>Music</span>
+    </button>
+
+    <main>
+        <!-- OPENING -->
+        <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+            <p class="eyebrow">A LITTLE STORY ABOUT US</p>
+            <h1>2 Years<br><span>With You</span></h1>
+            <p class="hero-text">Dua tahun, ribuan cerita,<br>dan satu orang yang masih ingin aku pilih.</p>
+            <button id="startBtn" class="primary-btn">Start Our Story <span>♥</span></button>
+            <p class="scroll-hint">scroll perlahan ↓</p>
+        </div>
+        </section>
+
+        <!-- INTRO -->
+        <section class="section intro">
+        <div class="container narrow reveal">
+            <p class="section-label">30.09.2024 — 30.09.2026</p>
+            <h2>Kalau waktu bisa diulang...</h2>
+            <p class="big-quote">
+            Aku tetap akan memilih hari di mana cerita kita dimulai.
+            </p>
+            <p class="muted">
+            Terima kasih sudah menjadi bagian dari hari-hariku.
+            Terima kasih untuk setiap tawa, obrolan, perjalanan,
+            salah paham, pelukan, dan semua hal kecil yang akhirnya
+            menjadi kenangan besar.
+            </p>
+        </div>
+        </section>
+
+        <!-- COUNTER -->
+        <section class="section counter-section">
+        <div class="container reveal">
+            <p class="section-label">OUR TIME</p>
+            <h2>Sudah sejauh ini ❤️</h2>
+            <div class="counter-grid">
+            <div class="counter-card"><strong id="days">0</strong><span>Days</span></div>
+            <div class="counter-card"><strong id="hours">0</strong><span>Hours</span></div>
+            <div class="counter-card"><strong id="minutes">0</strong><span>Minutes</span></div>
+            <div class="counter-card"><strong id="seconds">0</strong><span>Seconds</span></div>
+            </div>
+            <p class="counter-note">dan semoga masih terus bertambah...</p>
+        </div>
+        </section>
+
+        <!-- MEMORIES -->
+        <section class="section memories">
+        <div class="container">
+            <div class="section-heading reveal">
+            <p class="section-label">OUR MEMORIES</p>
+            <h2>Potongan kecil<br>dari cerita kita.</h2>
+            <p class="muted">Banyak cerita. Satu hubungan yang berarti.</p>
+            </div>
+
+            <div class="gallery" id="gallery">
+            <figure class="memory-card reveal"><img src="images/foto1.jpeg" alt="Kenangan 1"><figcaption>01</figcaption></figure>
+            <figure class="memory-card reveal"><img src="images/foto2.jpeg" alt="Kenangan 2"><figcaption>02</figcaption></figure>
+            <figure class="memory-card reveal"><img src="images/foto3.jpeg" alt="Kenangan 3"><figcaption>03</figcaption></figure>
+            <figure class="memory-card reveal"><img src="images/foto4.jpeg" alt="Kenangan 4"><figcaption>04</figcaption></figure>
+            <figure class="memory-card reveal"><img src="images/foto6.jpeg" alt="Kenangan 6"><figcaption>05</figcaption></figure>
+            <figure class="memory-card reveal"><img src="images/foto7.jpeg" alt="Kenangan 7"><figcaption>06</figcaption></figure>
+            <figure class="memory-card reveal"><img src="images/foto8.jpeg" alt="Kenangan 8"><figcaption>07</figcaption></figure>
+            <figure class="memory-card reveal"><img src="images/foto9.jpeg" alt="Kenangan 9"><figcaption>08</figcaption></figure>
+            <figure class="memory-card reveal"><img src="images/foto10.jpeg" alt="Kenangan 10"><figcaption>09</figcaption></figure>
+            <figure class="memory-card reveal"><img src="images/foto11.jpeg" alt="Kenangan 11"><figcaption>10</figcaption></figure>
+            <figure class="memory-card reveal"><img src="images/foto12.jpeg" alt="Kenangan 12"><figcaption>11</figcaption></figure>
+            <figure class="memory-card reveal"><img src="images/foto13.jpeg" alt="Kenangan 13"><figcaption>12</figcaption></figure>
+            <figure class="memory-card reveal"><img src="images/foto14.jpeg" alt="Kenangan 14"><figcaption>13</figcaption></figure>
+            <figure class="memory-card reveal"><img src="images/foto15.jpeg" alt="Kenangan 15"><figcaption>14</figcaption></figure>
+            <figure class="memory-card reveal"><img src="images/foto16.jpeg" alt="Kenangan 16"><figcaption>15</figcaption></figure>
+            </div>
+        </div>
+        </section>
+
+        <!-- VIDEO -->
+        <section class="section video-section">
+        <div class="container narrow reveal">
+            <p class="section-label">ONE LITTLE VIDEO</p>
+            <h2>Dan ini salah satu<br>momen favoritku.</h2>
+            <div class="video-wrap">
+            <video id="memoryVideo" controls playsinline preload="metadata">
+                <source src="images/vidio1.mp4" type="video/mp4">
+                Browser kamu tidak mendukung video.
+            </video>
+            </div>
+            <p class="video-caption">30 detik yang mungkin sederhana, tapi berarti buat aku. ❤️</p>
+        </div>
+        </section>
+
+        <!-- LETTER -->
+        <section class="section letter-section">
+        <div class="container narrow reveal">
+            <p class="section-label">A LETTER FOR YOU</p>
+            <h2>Untuk kamu,<br>yang sudah menemani aku.</h2>
+
+            <div class="letter">
+            <p id="typedText"></p>
+            <span class="cursor">|</span>
+            </div>
+
+            <button id="letterBtn" class="secondary-btn">Buka pesannya 💌</button>
+        </div>
+        </section>
+
+        <!-- FINAL -->
+        <section class="final-section">
+        <div class="final-glow"></div>
+        <div class="container narrow reveal">
+            <p class="section-label">AND AFTER 2 YEARS...</p>
+            <h2>Still you.</h2>
+            <p class="final-text">
+            Bukan karena semuanya selalu mudah.<br>
+            Tapi karena dari semua hal yang terjadi,<br>
+            aku masih ingin berjalan sama kamu.
+            </p>
+
+            <div class="final-heart">♥</div>
+
+            <p class="forever">Happy 2nd Anniversary.</p>
+            <p class="signature">— dari seseorang yang masih memilih kamu.</p>
+
+            <button id="replayBtn" class="secondary-btn">Ulangi cerita ↻</button>
+        </div>
+        </section>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <button id="closeLightbox" class="close-lightbox">×</button>
+        <img id="lightboxImg" src="" alt="Foto kenangan">
+    </div>
+
+    <script src="script.js"></script>
+    </body>
+    </html>
